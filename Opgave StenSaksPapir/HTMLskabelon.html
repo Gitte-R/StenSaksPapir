@@ -7,17 +7,17 @@
     </head>
     <body>
         <h2>Lad os spille Sten/Saks/Papir</h2>
-        <p>Vælg en mulighed nedenfor og tryk SPIL:</p>
+        <p>Vælg en mulighed nedenfor og tryk SPIL. Vi spiller bedst af 3.</p>
+        <span>Antal spil: </span><span id="turns"></span></br>
+        <input type="radio" name="valg" id="Sten" value="Sten">Sten</input></br>
+        <input type="radio" name="valg" id="Saks" value="Saks">Saks</input></br>
+        <input type="radio" name="valg" id="Papir" value="Papir">Papir</input></br></br>
+        <input type="submit" value=" SPIL" onclick="User()">
+        </br></br>
         
-            <input type="radio" name="valg" id="Sten" value="Sten">Sten</input></br>
-            <input type="radio" name="valg" id="Saks" value="Saks">Saks</input></br>
-            <input type="radio" name="valg" id="Papir" value="Papir">Papir</input></br>
-            <input type="submit" value=" SPIL" onclick="User()">
-        
-        <P>Computerens valg er...</P>
-        <p id="computerInput"></p>
+        <span>Computerens valgte...     </span><span id="computerInput"></span>
         <p id="resultHere"></p>
-
-
+        <p id="best"></p>
+        
 	</body>
 </html>
