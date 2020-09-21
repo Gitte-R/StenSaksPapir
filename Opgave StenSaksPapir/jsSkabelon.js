@@ -38,13 +38,15 @@ function Results(computerChoice, userChoice){
     (document.getElementById("resultHere").innerHTML = "Tillykke. Ét point til dig") && userVins++:  
     (document.getElementById("resultHere").innerHTML = "Desværre. Ét point til computeren") && computerVins++; 
 
-    BestOfTree(userVins, computerVins);
+    BestOfTree(userVins, computerVins, computerChoice, userChoice);
 }
 
-function BestOfTree (userVins, computerVins){
+function BestOfTree (userVins, computerVins, computerChoice, userChoice){
     if (userVins === 2 || computerVins === 2){
-        userVins===2 ? document.write("Tillykke du vandt. Vil du prøve igen "):
-        document.write("Du tabte desværre. Vil du prøve igen? ");
+        userVins === 2 ? document.write(`Tillykke du vandt. Du valgte ${userChoice} 
+        og computeren valgte ${computerChoice}. Samlede antal spil var ${counts}. Vil du prøve igen? `):
+        document.write(`Du tabte desværre. Du valgte ${userChoice} 
+        og computeren valgte ${computerChoice}. Samlede antal spil var ${counts}. Vil du prøve igen? `);
         CreateBotton();
     }   
 }
